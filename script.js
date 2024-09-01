@@ -26,7 +26,7 @@ function checkAnswer() {
         iframe.setAttribute("width", "0");
         iframe.setAttribute("height", "0");
         iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+        iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"); // Thêm 'allow="autoplay"'
         document.body.appendChild(iframe);
 
         // Hiển thị modal khi trả lời đúng
