@@ -61,12 +61,10 @@
     100% { top: -5%; }
 }
 
-.input-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.input-container p {
+    transition: all 0.3s; /* Thêm hiệu ứng mượt mà khi hover */
+    border-radius: 5px; /* Bo góc cho văn bản */
+    font-size: 20px; /* Kích thước chữ */
 }
 
 .input-container input {
@@ -77,17 +75,17 @@
     border-radius: 5px;
     width: 200px;
     text-align: center;
+    transition: all 0.3s; /* Thêm hiệu ứng mượt mà khi hover */
 }
 
-.input-container button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+.input-container:hover p,
+.input-container:hover input {
+    background-color: #f9f9f9; /* Màu nền khi hover */
+    border-color: #666; /* Màu border khi hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng khi hover */
 }
+
+
 
 .modal {
     display: none;
@@ -149,7 +147,15 @@
     cursor: pointer;
     border-radius: 10px; /* bo góc button */
     margin-left: 5px; /* Khoảng cách giữa input và button*/
+    transition: all 0.3s; /* Thêm hiệu ứng mượt mà khi hover */
 }
+
+.input-container button:hover {
+    background-color: #ff6666; /* Màu nền khi hover */
+    transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Đổ bóng khi hover */
+}
+
 
 .image-container {
     width: none;
