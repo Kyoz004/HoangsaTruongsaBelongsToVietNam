@@ -1,0 +1,172 @@
+.title {
+    text-transform: uppercase;
+    position: absolute;
+    font-family: Tahoma, sans-serif;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    animation: aniName 9s infinite;
+    display: none; /* Hide title initially */
+}
+
+@keyframes aniName {
+    0% { left: 0; }
+    100% { color: #cc0000; background: yellow; }
+}
+
+.title2 {
+    text-transform: uppercase;
+    position: absolute;
+    font-family: Tahoma, sans-serif;
+    margin-bottom: 10px;
+    left: 50%;
+    top: 90%;  /* Điều chỉnh phần tử xuống dưới 50% so với phần trên của cửa sổ */
+    transform: translate(-50%, 50%);  /* Điều chỉnh phần tử xuống dưới 50% so với chính nó */
+    color: red;
+    animation: aniName 9s infinite;
+    display: none; /* Hide title initially */
+}
+
+
+@keyframes aniName {
+    0% { left: 0; }
+    100% { color: #cc0000; background: yellow; }
+}
+
+.flag {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Hide flag initially */
+    background-color: transparent; /* Clear the background of the flag */
+}
+
+.flag-element {
+    animation: oscill 1s ease-in-out infinite alternate;
+    background: url('http://i.imgur.com/8VSL8Ve.gif');
+    background-size: 300px 100%;
+    position: relative;
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+    box-shadow: 0 1px grey, 0 -1px gray;
+}
+
+@keyframes oscill {
+    0% { top: 5%; }
+    100% { top: -5%; }
+}
+
+.input-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.input-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* bo góc input */
+    width: 200px;
+    text-align: center;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* bo góc button */
+    margin-left: 5px; /* Khoảng cách giữa input và button*/
+}
+
+.image-container {
+    width: none;
+    height: 360px;
+    background-image: url('hoangsatruongsacuavietnam.jpg');
+    background-size: 80% 100%; /* Đảm bảo ảnh trải đều ra theo chiều ngang và chiều dọc của phần tử */
+    background-position: center;
+    border-radius: 10px; /* bo góc ảnh */
+}
+
+.image-container2 {
+    width: none;
+    height: 360px;
+    background-image: url('bac ho doc tuyen ngon.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 10px;
+}
+
+
